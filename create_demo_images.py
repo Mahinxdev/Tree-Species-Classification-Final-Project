@@ -4,7 +4,7 @@ import seaborn as sns
 from matplotlib.patches import Rectangle
 import pandas as pd
 
-# Set style for professional-looking plots
+# Set style for professional looking plots
 plt.style.use('seaborn-v0_8')
 sns.set_palette("husl")
 

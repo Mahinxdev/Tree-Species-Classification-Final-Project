@@ -1,4 +1,4 @@
-# 🌳 Tree Species Classification & Intelligence Assistant
+# 🌲 AI-Powered Tree Species Identification & Analysis System
 
 <div align="center">
 
@@ -7,271 +7,271 @@
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.x-red?logo=streamlit&logoColor=white)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-1.x-blue?logo=scikitlearn&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
-![GitHub Stars](https://img.shields.io/github/stars/SatyamPandey-07/TREE_SPECIES_CLASSIFICATION?style=social)
+![GitHub Stars](https://img.shields.io/github/stars/MahinSharda/TREE_SPECIES_CLASSIFICATION?style=social)
 
-*An advanced AI-powered web application for tree species identification, location-based recommendations, and intelligent forestry insights using machine learning and computer vision.*
+*A cutting-edge machine learning application that revolutionizes tree species identification through intelligent location analysis, computer vision, and comprehensive forestry data insights.*
 
-[🚀 Quick Start](#-quick-start) • [📖 Features](#-features--capabilities) • [🧠 ML Architecture](#-machine-learning-architecture) • [📋 Setup Guide](#-complete-setup--usage-guide) • [🤝 Contributing](#-contributing)
+[⚡ Getting Started](#-getting-started) • [🎯 Core Features](#-core-features) • [🤖 AI Models](#-ai-models--algorithms) • [🔧 Installation](#-installation--setup) • [🌟 Contributing](#-contributing)
 
 </div>
 
-## 📑 Table of Contents
+## 📋 Navigation
 
-- [🎯 Overview](#-overview)
-- [🚀 Quick Start](#-quick-start)
-- [✨ Features & Capabilities](#-features--capabilities)
-- [�️ Dataset & Data Sources](#️-dataset--data-sources)
-- [🧠 Machine Learning Architecture](#-machine-learning-architecture)
-- [🛠️ Technical Implementation](#️-technical-implementation)
-- [📋 Complete Setup & Usage Guide](#-complete-setup--usage-guide)
-- [🎯 Usage Examples](#-usage-examples)
-- [📈 Performance Metrics & Limitations](#-performance-metrics--limitations)
-- [🚀 Deployment Options](#-deployment-options)
-- [🤝 Contributing](#-contributing)
-- [📄 License](#-license)
-- [📧 Contact & Support](#-contact--support)
-
----
-
-## 🎯 Overview
-
-The **Tree Species Classification & Intelligence Assistant** is a comprehensive machine learning solution that combines:
-- **🌍 Location Intelligence**: K-NN based tree species recommendations
-- **🔍 Species Discovery**: Geographic distribution analysis
-- **📸 Image Classification**: CNN-powered visual tree identification
-- **📊 Data Analytics**: Insights from 1.38M+ tree records
-
-Built with modern ML frameworks and deployed as an interactive web application.
+- [🌟 Project Introduction](#-project-introduction)
+- [⚡ Getting Started](#-getting-started)
+- [🎯 Core Features](#-core-features)
+- [📊 Data Resources](#-data-resources--sources)
+- [🤖 AI Models & Algorithms](#-ai-models--algorithms)
+- [⚙️ System Architecture](#️-system-architecture)
+- [🔧 Installation & Setup](#-installation--setup)
+- [💡 Application Examples](#-application-examples)
+- [📊 Model Analytics](#-model-analytics--constraints)
+- [🌐 Deployment Guide](#-deployment-guide)
+- [🌟 Contributing](#-contributing)
+- [📜 License Information](#-license-information)
+- [💬 Contact Details](#-contact-details)
 
 ---
-## DEMO Screen Shots
+
+## 🌟 Project Introduction
+
+The **AI-Powered Tree Species Identification & Analysis System** represents a sophisticated fusion of:
+- **🗺️ Geospatial Intelligence**: Advanced K-NN algorithms for location-aware species prediction
+- **🔬 Biodiversity Analysis**: Comprehensive geographic distribution studies
+- **🎯 Visual Recognition**: Deep learning CNN models for image-based tree identification
+- **📈 Big Data Processing**: Analysis of 1.38M+ comprehensive tree records
+
+Engineered using state-of-the-art ML technologies and delivered through an intuitive web interface.
+
+---
+## Application Screenshots
 <img width="1913" height="983" alt="Screenshot 2025-07-26 022320" src="https://github.com/user-attachments/assets/86c4b359-f1b2-4447-a737-99c323e80d35" />
 <img width="1915" height="955" alt="Screenshot 2025-07-26 022359" src="https://github.com/user-attachments/assets/a6d5f9a9-3de8-4a3e-9336-6873b38f4bdf" />
 <img width="1918" height="904" alt="Screenshot 2025-07-26 022444" src="https://github.com/user-attachments/assets/3ca17733-f965-44bf-a33d-54782aed7cfc" />
 <img width="1903" height="874" alt="Screenshot 2025-07-26 022557" src="https://github.com/user-attachments/assets/1e9844fa-7678-48ec-9f22-224189c381cc" />
 
 ---
-## 🚀 Quick Start
+## ⚡ Getting Started
 
-### Prerequisites
-- Python 3.13+
-- pip package manager
-- 4GB+ RAM (for CNN model loading)
+### System Requirements
+- Python 3.13 or higher
+- Package manager (pip)
+- Minimum 4GB RAM for optimal model performance
 
-### Installation & Setup
+### Quick Launch Instructions
 
 ```bash
-# Clone the repository
-git clone https://github.com/SatyamPandey-07/TREE_SPECIES_CLASSIFICATION.git
+# Download the project
+git clone https://github.com/MahinSharda/TREE_SPECIES_CLASSIFICATION.git
 cd TREE_SPECIES_CLASSIFICATION
 
-# Install dependencies
+# Setup dependencies
 pip install -r requirements.txt
 
-# Download the CNN model (255MB)
-# Note: The CNN model is not included in the repository due to size limitations
-# You can train your own using the tree_CNN.ipynb notebook or contact the author
+# Get the CNN model (255MB file)
+# Important: CNN model not included due to file size constraints
+# Train your own model using tree_CNN.ipynb or reach out to the author
 
-# Run the application
+# Launch the application
 streamlit run streamlit_integrated.py
 ```
 
-🌐 **Access the app**: Open your browser and navigate to `http://localhost:8501`
+🔗 **Application URL**: Navigate to `http://localhost:8501` in your browser
 
 ---
 
-## ✨ Features & Capabilities
+## 🎯 Core Features
 
-### 🌲 1. Smart Location-Based Recommendations
-- **Input**: GPS coordinates, tree diameter, native status, city/state
-- **Output**: Top 5 most likely tree species for the location
-- **Algorithm**: K-Nearest Neighbors with geospatial clustering
-- **Use Case**: Urban planning, forestry management, biodiversity studies
+### 🗺️ 1. Intelligent Geolocation-Based Species Prediction
+- **Input Parameters**: Geographic coordinates, trunk diameter, nativity classification, location details
+- **Results**: Top 5 probable tree species for specified location
+- **Technology**: K-Nearest Neighbors with spatial optimization
+- **Applications**: Environmental planning, forest management, ecological research
 
-### 📍 2. Species Distribution Mapping  
-- **Input**: Select any tree species from dropdown
-- **Output**: Geographic distribution and common locations
-- **Features**: City-wise prevalence analysis
-- **Use Case**: Conservation planning, habitat studies
+### 🌍 2. Species Geographic Distribution Analysis  
+- **Input Method**: Species selection from comprehensive dropdown menu
+- **Analysis Output**: Complete geographic spread and habitat preferences
+- **Insights**: Regional prevalence and distribution patterns
+- **Applications**: Conservation strategies, habitat preservation
 
-### 📷 3. AI-Powered Image Classification
-- **Input**: Upload tree images (leaves, bark, full tree)
-- **Output**: Species prediction with confidence scores
-- **Technology**: Custom CNN trained on 30+ species (255MB model)
-- **Accuracy**: ~26% on validation set (challenging real-world dataset)
-- **Note**: CNN model file not included in repo due to size - train using `tree_CNN.ipynb`
-
----
-
-## 🗄️ Dataset & Data Sources
-
-### 📊 Tree Metadata Repository
-| **Attribute** | **Details** |
-|---------------|-------------|
-| **Source** | Municipal tree surveys from 50+ U.S. cities |
-| **Total Records** | ~1.38 million georeferenced trees |
-| **Coverage** | Louisville, Chicago, NYC, LA, and more |
-| **Key Fields** | Species names, GPS coordinates, diameter, native status |
-| **Time Period** | 2018-2022 survey data |
-
-**Key Data Columns:**
-- `common_name`: Tree species (e.g., Bur Oak)
-- `scientific_name`: Botanical name (e.g., Quercus macrocarpa)  
-- `latitude_coordinate`, `longitude_coordinate`: GPS location
-- `city`, `state`, `address`: Geographic identifiers
-- `native`: Whether the tree is native to the area
-- `diameter_breast_height_CM`: Tree measurement standard
-
-### 🖼️ Image Classification Dataset
-| **Attribute** | **Details** |
-|---------------|-------------|
-| **Species Count** | 30 common North American species |
-| **Total Images** | 1,454 curated samples |
-| **Resolution** | Standardized to 224×224 pixels |
-| **Augmentation** | Rotation, zoom, flip transformations |
-| **Quality** | Real-world conditions (varying lighting, angles) |
-
-**Dataset Structure:** Folder-based organization with each folder named after tree species for supervised learning.
+### 🖼️ 3. Computer Vision Species Recognition
+- **Input Format**: Tree photographs (foliage, bark, complete structure)
+- **AI Response**: Species identification with probability scores
+- **Engine**: Custom-trained CNN with 30+ species recognition (255MB model)
+- **Performance**: Approximately 26% validation accuracy (real-world challenging conditions)
+- **Model Availability**: Train using provided `tree_CNN.ipynb` notebook
 
 ---
 
-## 🧠 Machine Learning Architecture
+## 📊 Data Resources & Sources
+
+### 🌳 Comprehensive Tree Database
+| **Parameter** | **Specification** |
+|---------------|-------------------|
+| **Data Origin** | Urban forestry surveys across 50+ American cities |
+| **Record Count** | Approximately 1.38 million georeferenced entries |
+| **Geographic Scope** | Louisville, Chicago, New York, Los Angeles, plus additional cities |
+| **Data Points** | Species identification, GPS coordinates, measurements, native classification |
+| **Collection Period** | 2018-2022 municipal surveys |
+
+**Primary Data Elements:**
+- `common_name`: Species common identifier (e.g., Bur Oak)
+- `scientific_name`: Scientific classification (e.g., Quercus macrocarpa)  
+- `latitude_coordinate`, `longitude_coordinate`: Precise location data
+- `city`, `state`, `address`: Geographic reference points
+- `native`: Indigenous species classification
+- `diameter_breast_height_CM`: Standard forestry measurement
+
+### 📷 Visual Classification Dataset
+| **Parameter** | **Specification** |
+|---------------|-------------------|
+| **Species Coverage** | 30 prevalent North American varieties |
+| **Image Count** | 1,454 professionally curated samples |
+| **Image Standards** | Normalized 224×224 pixel resolution |
+| **Data Enhancement** | Comprehensive augmentation (rotation, scaling, mirroring) |
+| **Image Quality** | Real-world photography (diverse lighting and perspectives) |
+
+**Organization Method:** Directory-based structure with species-specific folders for supervised machine learning.
+
+---
+
+## 🤖 AI Models & Algorithms
 
 <div align="center">
 <img src="docs/cnn_architecture.png" alt="CNN Architecture" width="800">
-<p><em>Custom CNN Architecture for Tree Species Image Classification</em></p>
+<p><em>Deep Learning CNN Framework for Tree Species Visual Classification</em></p>
 </div>
 
-### 🔍 Location-Based Recommender System
+### 🌐 Geospatial Recommendation Engine
 ```
-Input: [Latitude, Longitude, Diameter, Native_Status, City, State]
+Input Pipeline: [Latitude, Longitude, Diameter, Native_Status, City, State]
     ↓
-Preprocessing: StandardScaler + LabelEncoder
+Data Processing: StandardScaler + LabelEncoder transformations
     ↓
-K-Nearest Neighbors (k=5)
+Algorithm: K-Nearest Neighbors (k=5)
     ↓
-Output: Top 5 Recommended Species
-```
-
-**Technical Details:**
-- **Algorithm**: scikit-learn `NearestNeighbors`
-- **Distance Metric**: Euclidean distance in scaled feature space
-- **Features**: Geographic + environmental + biological attributes
-- **Performance**: Sub-second response time for 1.38M records
-
-### 🧠 CNN Image Classifier
-```
-Input: 224×224×3 RGB Image
-    ↓
-Conv2D(32) → MaxPool → Conv2D(64) → MaxPool
-    ↓
-Conv2D(128) → MaxPool → Dropout(0.25)
-    ↓
-Flatten → Dense(512) → Dropout(0.5) → Dense(30)
-    ↓
-Output: Species Probability Distribution
+Results: Top 5 Species Recommendations with confidence scores
 ```
 
-**Model Specifications:**
-- **Framework**: TensorFlow/Keras
-- **Architecture**: Sequential CNN with dropout regularization
-- **Loss Function**: Categorical Crossentropy
-- **Optimizer**: Adam (learning_rate=0.001)
-- **Training**: 50 epochs with validation monitoring
-- **Model Size**: 255MB (`basic_cnn_tree_species.h5`)
+**Implementation Details:**
+- **Core Algorithm**: scikit-learn `NearestNeighbors` implementation
+- **Distance Calculation**: Euclidean distance in normalized feature space
+- **Input Features**: Geographic, environmental, and biological parameters
+- **Response Time**: Sub-second processing for 1.38M record queries
 
-### 📊 Data Pipeline & Preprocessing
-- **Encoding**: LabelEncoder for categorical variables
-- **Scaling**: StandardScaler for numerical features
-- **Image Processing**: Normalization to [0,1] range
-- **Data Augmentation**: ImageDataGenerator with geometric transforms
-- **Train/Validation Split**: 80/20 stratified sampling
+### 🧠 Deep Learning Image Classifier
+```
+Input Layer: 224×224×3 RGB Image Matrix
+    ↓
+Convolutional Layers: Conv2D(32) → MaxPool → Conv2D(64) → MaxPool
+    ↓
+Deep Features: Conv2D(128) → MaxPool → Dropout(0.25)
+    ↓
+Classification: Flatten → Dense(512) → Dropout(0.5) → Dense(30)
+    ↓
+Output Layer: Species Probability Distribution
+```
+
+**Model Architecture:**
+- **Development Framework**: TensorFlow/Keras ecosystem
+- **Network Type**: Sequential CNN with regularization
+- **Loss Optimization**: Categorical Crossentropy
+- **Training Algorithm**: Adam optimizer (learning_rate=0.001)
+- **Training Cycles**: 50 epochs with validation monitoring
+- **File Size**: 255MB (`basic_cnn_tree_species.h5`)
+
+### 🔄 Data Processing Pipeline
+- **Categorical Encoding**: LabelEncoder for text-based features
+- **Numerical Scaling**: StandardScaler for feature normalization
+- **Image Processing**: Pixel value normalization to [0,1] range
+- **Augmentation Strategy**: ImageDataGenerator with geometric transformations
+- **Data Splitting**: 80/20 stratified train/validation methodology
 
 ---
 
-## 🛠️ Technical Implementation
+## ⚙️ System Architecture
 
-### 📁 Project Structure
+### 🗂️ Repository Organization
 ```
 TREE_SPECIES_CLASSIFICATION/
-├── 📊 Data Processing
-│   ├── 5M_trees.ipynb          # Train recommender system
-│   └── tree_CNN.ipynb          # Train CNN classifier
-├── 🚀 Production Application  
-│   ├── streamlit_integrated.py # Main web application
-│   └── requirements.txt        # Dependencies
-├── 🤖 Trained Models
+├── 🔬 Model Development
+│   ├── 5M_trees.ipynb          # Recommendation system training
+│   └── tree_CNN.ipynb          # CNN classifier development
+├── 🌐 Web Application  
+│   ├── streamlit_integrated.py # Primary application interface
+│   └── requirements.txt        # Dependency specifications
+├── 🎯 Trained Models
 │   ├── tree_data.pkl          # Processed dataset (1.9MB)
-│   ├── scaler.joblib          # Feature scaler (<1MB)
+│   ├── scaler.joblib          # Feature normalization (< 1MB)
 │   ├── nn_model.joblib        # KNN model (1MB)
 │   └── basic_cnn_tree_species.h5  # CNN model (255MB)
-└── 📚 Documentation
-    ├── README.md              # This file
-    └── PRODUCTION_READY.md    # Deployment guide
+└── 📖 Documentation
+    ├── README.md              # Project documentation
+    └── PRODUCTION_READY.md    # Deployment instructions
 ```
 
-### ⚙️ System Requirements
-| **Component** | **Requirement** |
-|---------------|-----------------|
-| **Python** | 3.13+ (tf-nightly compatible) |
-| **Memory** | 4GB+ RAM for model loading |
-| **Storage** | 2GB+ for models and data |
-| **GPU** | Optional (CPU inference supported) |
+### 🖥️ Hardware Specifications
+| **Component** | **Minimum Requirement** |
+|---------------|-------------------------|
+| **Python Version** | 3.13+ (compatible with tf-nightly) |
+| **System Memory** | 4GB+ RAM for model operations |
+| **Disk Space** | 2GB+ for models and datasets |
+| **GPU Support** | Optional (CPU processing supported) |
 
-### 🔧 Dependencies
+### 📦 Software Dependencies
 ```python
-streamlit>=1.28.0      # Web application framework
-tensorflow>=2.15.0     # Deep learning (use tf-nightly for Python 3.13)
-scikit-learn>=1.3.0    # Machine learning algorithms
-pandas>=2.0.0          # Data manipulation
-numpy>=1.24.0          # Numerical computing
-pillow>=9.5.0          # Image processing
-joblib>=1.3.0          # Model serialization
+streamlit>=1.28.0      # Interactive web application platform
+tensorflow>=2.15.0     # Machine learning framework (tf-nightly for Python 3.13)
+scikit-learn>=1.3.0    # Traditional ML algorithms
+pandas>=2.0.0          # Data analysis and manipulation
+numpy>=1.24.0          # Scientific computing foundation
+pillow>=9.5.0          # Image processing capabilities
+joblib>=1.3.0          # Model persistence and loading
 ```
 
 ---
 
-## 📋 Complete Setup & Usage Guide
+## 🔧 Installation & Setup
 
-### Step 1: Environment Setup
+### Phase 1: Environment Configuration
 ```bash
-# Clone repository
-git clone https://github.com/SatyamPandey-07/TREE_SPECIES_CLASSIFICATION.git
+# Repository download
+git clone https://github.com/MahinSharda/TREE_SPECIES_CLASSIFICATION.git
 cd TREE_SPECIES_CLASSIFICATION
 
-# Create virtual environment (recommended)
-python -m venv tree_env
-tree_env\Scripts\activate  # Windows
-# source tree_env/bin/activate  # Linux/Mac
+# Virtual environment setup (highly recommended)
+python -m venv tree_classification_env
+tree_classification_env\Scripts\activate  # Windows
+# source tree_classification_env/bin/activate  # Linux/Mac
 
-# Install dependencies
+# Dependency installation
 pip install -r requirements.txt
 ```
 
-### Step 2: Model Training (Optional - Models Included)
+### Phase 2: Model Training (Optional - Pre-trained Models Available)
 ```bash
-# Train recommender system (generates tree_data.pkl, scaler.joblib, nn_model.joblib)
+# Train geospatial recommender (generates tree_data.pkl, scaler.joblib, nn_model.joblib)
 jupyter notebook 5M_trees.ipynb
 
-# Train CNN classifier (generates basic_cnn_tree_species.h5)
+# Train CNN image classifier (generates basic_cnn_tree_species.h5)
 jupyter notebook tree_CNN.ipynb
 ```
 
-### Step 3: Launch Application
+### Phase 3: Application Deployment
 ```bash
-# Start the web application
+# Web application launch
 streamlit run streamlit_integrated.py
 
-# Application will be available at: http://localhost:8501
+# Access point: http://localhost:8501
 ```
 
 ---
 
-## 🎯 Usage Examples
+## 💡 Application Examples
 
-### 1. Location-Based Tree Recommendations
+### 1. Geospatial Tree Species Recommendation
 ```
-📍 Input Example:
+🌍 Sample Input:
 - Latitude: 38.2527  
 - Longitude: -85.7585
 - Diameter: 25.4 cm
@@ -279,77 +279,77 @@ streamlit run streamlit_integrated.py
 - City: Louisville
 - State: Kentucky
 
-🌳 Expected Output:
-1. American Elm (Confidence: 85%)
-2. Red Oak (Confidence: 78%)
-3. Sugar Maple (Confidence: 72%)
-4. Tulip Tree (Confidence: 69%)
-5. Black Walnut (Confidence: 65%)
+🌳 AI Predictions:
+1. American Elm (Probability: 85%)
+2. Red Oak (Probability: 78%)
+3. Sugar Maple (Probability: 72%)
+4. Tulip Tree (Probability: 69%)
+5. Black Walnut (Probability: 65%)
 ```
 
-### 2. Species Distribution Query
+### 2. Species Geographic Analysis
 ```
-🔍 Input: "Red Oak"
-📊 Output: Geographic distribution map showing prevalence in:
-- Chicago, IL (15,432 trees)
-- Louisville, KY (8,921 trees)  
-- Atlanta, GA (6,543 trees)
-- [Additional cities...]
+🔍 Query: "Red Oak"
+📈 Distribution Results: Geographic mapping showing concentrations in:
+- Chicago, IL (15,432 documented trees)
+- Louisville, KY (8,921 documented trees)  
+- Atlanta, GA (6,543 documented trees)
+- [Extended city listings...]
 ```
 
-### 3. Image Classification
+### 3. Visual Species Identification
 ```
-📸 Input: Upload tree image (JPG/PNG)
-🤖 AI Analysis: 
-- Primary Prediction: "Sugar Maple" (34.2%)
-- Secondary: "Red Maple" (28.7%)
-- Tertiary: "Norway Maple" (22.1%)
-- Confidence Threshold: >25% for reliable prediction
+📱 Input: Tree photograph upload (JPG/PNG formats)
+🔍 AI Analysis Results: 
+- Top Prediction: "Sugar Maple" (34.2% confidence)
+- Alternative: "Red Maple" (28.7% confidence)
+- Third Option: "Norway Maple" (22.1% confidence)
+- Reliability Threshold: >25% for dependable identification
 ```
 
 ---
 
-## 📈 Performance Metrics & Limitations
+## 📊 Model Analytics & Constraints
 
 <div align="center">
 <img src="docs/performance_metrics.png" alt="Performance Metrics" width="800">
-<p><em>Model Performance Comparison: Dataset Sizes and Response Times</em></p>
+<p><em>Comparative Analysis: Dataset Dimensions and Processing Performance</em></p>
 </div>
 
-### Model Performance
-| **Model** | **Accuracy** | **Dataset Size** | **Training Time** |
-|-----------|--------------|------------------|-------------------|
-| KNN Recommender | N/A (Distance-based) | 1.38M records | ~30 seconds |
-| CNN Classifier | ~26% validation | 1,454 images | ~2 hours |
+### Algorithm Performance Summary
+| **Model Type** | **Accuracy Rate** | **Training Data** | **Development Time** |
+|----------------|-------------------|-------------------|----------------------|
+| KNN Geospatial System | N/A (Distance-based methodology) | 1.38M records | ~30 seconds |
+| CNN Visual Classifier | ~26% validation performance | 1,454 images | ~2 hours |
 
 <div align="center">
 <img src="docs/data_distribution.png" alt="Data Distribution" width="800">
-<p><em>Dataset Analytics: Geographic Distribution, Species Frequency, and Tree Characteristics</em></p>
+<p><em>Statistical Overview: Geographic Coverage, Species Distribution, and Tree Metrics</em></p>
 </div>
 
-### Known Limitations
-- **CNN Accuracy**: Limited by small training dataset (1,454 images for 30 classes)
-- **Geographic Bias**: Dataset primarily covers U.S. cities
-- **Image Quality**: Performance varies with lighting, angle, and image clarity
-- **Species Coverage**: Limited to 30 common North American species
+### Current System Constraints
+- **CNN Performance**: Constrained by limited training dataset (1,454 images across 30 categories)
+- **Regional Focus**: Dataset predominantly covers United States urban areas
+- **Image Dependencies**: Accuracy varies with photographic conditions and quality
+- **Species Scope**: Currently limited to 30 common North American varieties
 
-### Future Improvements
-- [ ] Expand image dataset with data augmentation techniques
-- [ ] Include international tree species and locations
-- [ ] Implement ensemble methods for improved accuracy
-- [ ] Add leaf shape and bark texture analysis
-- [ ] Mobile application development
+### Enhancement Roadmap
+- [ ] Expand training dataset through advanced augmentation strategies
+- [ ] Incorporate global tree species and international datasets
+- [ ] Develop ensemble learning approaches for improved accuracy
+- [ ] Integrate morphological analysis (leaf patterns, bark characteristics)
+- [ ] Design companion mobile applications
 
 ---
 
-## 🚀 Deployment Options
+## 🌐 Deployment Guide
 
-### Local Development
+### Local Development Environment
 ```bash
 streamlit run streamlit_integrated.py
 ```
 
-### Docker Deployment
+### Containerized Deployment
 ```dockerfile
 FROM python:3.13-slim
 COPY . /app
@@ -359,72 +359,72 @@ EXPOSE 8501
 CMD ["streamlit", "run", "streamlit_integrated.py"]
 ```
 
-### Cloud Platforms
-- **Streamlit Cloud**: Direct GitHub integration
-- **Heroku**: Web application hosting
-- **AWS/GCP/Azure**: Scalable cloud deployment
-- **Docker**: Containerized deployment
+### Cloud Platform Options
+- **Streamlit Cloud**: Seamless GitHub repository integration
+- **Heroku Platform**: Scalable web application hosting
+- **AWS/GCP/Azure**: Enterprise-grade cloud infrastructure
+- **Docker Containers**: Platform-independent deployment
 
 ---
 
-## 🤝 Contributing
+## 🌟 Contributing
 
-We welcome contributions! Here's how you can help:
+Contributions are enthusiastically welcomed! Here's how you can make an impact:
 
-### Areas for Contribution
-- 🖼️ **Dataset Expansion**: Add more tree species images
-- 🌍 **Geographic Coverage**: Include international tree data
-- 🧠 **Model Improvements**: Enhance CNN architecture
-- 🎨 **UI/UX**: Improve web interface design
-- 📱 **Mobile Support**: Responsive design enhancements
+### Priority Contribution Areas
+- 📸 **Dataset Enhancement**: Contribute additional tree species imagery
+- 🌎 **Global Expansion**: Add international tree species and geographic data
+- 🚀 **Algorithm Optimization**: Improve CNN architecture and performance
+- 🎨 **Interface Design**: Enhance user experience and visual design
+- 📱 **Mobile Optimization**: Develop responsive design features
 
-### Development Workflow
-1. Fork the repository
-2. Create feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit changes (`git commit -m 'Add amazing feature'`)
-4. Push to branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+### Contribution Process
+1. Fork the project repository
+2. Create your feature branch (`git checkout -b feature/innovative-enhancement`)
+3. Implement and commit changes (`git commit -m 'Add innovative enhancement'`)
+4. Push to your branch (`git push origin feature/innovative-enhancement`)
+5. Submit a comprehensive Pull Request
 
-### Code Standards
-- Follow PEP 8 Python style guidelines
-- Add docstrings for new functions
-- Include unit tests for new features
-- Update documentation for API changes
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+### Development Standards
+- Adhere to PEP 8 Python coding conventions
+- Provide comprehensive docstrings for new functions
+- Include test coverage for new functionality
+- Update documentation to reflect API modifications
 
 ---
 
-## 📧 Contact & Support
+## 📜 License Information
 
-**Author**: Satyam Pandey  
-**GitHub**: [@SatyamPandey-07](https://github.com/SatyamPandey-07)  
-**Repository**: [TREE_SPECIES_CLASSIFICATION](https://github.com/SatyamPandey-07/TREE_SPECIES_CLASSIFICATION)
-
-### Getting Help
-- 🐛 **Bug Reports**: [Open an issue](https://github.com/SatyamPandey-07/TREE_SPECIES_CLASSIFICATION/issues)
-- 💡 **Feature Requests**: [Start a discussion](https://github.com/SatyamPandey-07/TREE_SPECIES_CLASSIFICATION/discussions)
-- 📧 **General Questions**: Contact via GitHub
+This project operates under the MIT License - refer to the [LICENSE](LICENSE) file for complete details.
 
 ---
 
-## 🙏 Acknowledgments
+## 💬 Contact Details
 
-- **Data Sources**: Municipal tree survey departments
-- **ML Frameworks**: TensorFlow, scikit-learn communities  
-- **Web Framework**: Streamlit development team
-- **Image Dataset**: Contributing photographers and botanical databases
+**Developer**: Mahin Sharda  
+**GitHub Profile**: [@MahinSharda](https://github.com/MahinSharda)  
+**Project Repository**: [TREE_SPECIES_CLASSIFICATION](https://github.com/MahinSharda/TREE_SPECIES_CLASSIFICATION)
+
+### Support Resources
+- 🚨 **Issue Reporting**: [Submit an issue](https://github.com/MahinSharda/TREE_SPECIES_CLASSIFICATION/issues)
+- 🗣️ **Feature Discussions**: [Join discussions](https://github.com/MahinSharda/TREE_SPECIES_CLASSIFICATION/discussions)
+- 📨 **Direct Contact**: Reach out through GitHub messaging
+
+---
+
+## 🏆 Acknowledgments
+
+- **Data Contributors**: Municipal forestry departments and survey teams
+- **Technology Stack**: TensorFlow, scikit-learn, and open-source communities  
+- **Platform Support**: Streamlit development and maintenance teams
+- **Visual Resources**: Photography contributors and botanical research databases
 
 ---
 
 <div align="center">
 
-**⭐ Star this repository if you found it helpful!**
+**🌟 Please star this repository if it proves valuable to your work!**
 
-Made with ❤️ for urban forestry and environmental conservation
+Developed with 💚 for sustainable forestry and environmental stewardship
 
 </div>
